@@ -12,6 +12,7 @@
 
 	<body>
 		<form action="w3armor.php">
+			<label for ="armtype">Search for :</label><br>
 			<input type="radio" name="scantype" value="armorval">Armor Value<br>
 			<input type="radio" name="scantype" value="armorper">Armor Percentage<br>
 			<input type="radio" name="scantype" value="armormod">Armor Modifier<br>
