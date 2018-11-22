@@ -44,12 +44,12 @@
 			if ($_GET["scantype"]=="armorval"){
 				$modifier = $_GET["amod"];
 				$percentage =  $_GET["aper"];
-				$armor = $percentage / ($modifier - $percentage * $modifier);
+				$armor = -($percentage / ($modifier - $percentage * $modifier));
 			}
 			if ($_GET["scantype"]=="armormod"){
 				$armor = $_GET["aval"];
 				$percentage =  $_GET["aper"];
-				$modifier = $percentage / ($armor - $percentage * $armor);
+				$modifier = -($percentage / ($armor - $percentage * $armor));
 			}
 		?>
 		
